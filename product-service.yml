@@ -3,11 +3,7 @@ server:
 
 spring:
   application:
-    name: product-service
-
-  config:
-    import: optional:configserver:http://localhost:8888
-
+    name: product-service 
   datasource:
     url: jdbc:mysql://localhost:3306/product?useSSL=false&serverTimezone=UTC
     username: root
@@ -75,6 +71,7 @@ springdoc:
   swagger-ui:
     enabled: true
     path: /swagger-ui.html
+
 
 
 
