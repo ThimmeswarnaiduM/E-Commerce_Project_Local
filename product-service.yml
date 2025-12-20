@@ -1,5 +1,5 @@
 server:
-  port: 8091
+  port: 8082
 
 spring:
   application:
@@ -75,4 +75,5 @@ springdoc:
   swagger-ui:
     enabled: true
     path: /swagger-ui.html
+
 
