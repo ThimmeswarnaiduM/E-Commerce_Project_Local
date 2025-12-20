@@ -3,9 +3,10 @@ server:
 
 spring:
   application:
-    name: product-service 
+    name: product-service
+
   datasource:
-    url: jdbc:mysql://localhost:3306/product       
+    url: jdbc:mysql://localhost:3306/product?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
     password: mysql
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -44,25 +45,16 @@ management:
     web:
       exposure:
         include: "*"
-
   endpoint:
     health:
       show-details: always
 
-  health:
-    diskspace:
-      enabled: true
-
 info:
   app:
     name: product-service
-    version: ${git.commit.id.abbrev}
 
 logging:
   level:
-    org.springframework.cloud: DEBUG
-    com.netflix.eureka: DEBUG
-    com.netflix.discovery: DEBUG
     root: INFO
 
 springdoc:
@@ -71,9 +63,3 @@ springdoc:
   swagger-ui:
     enabled: true
     path: /swagger-ui.html
-
-
-
-
-
-
