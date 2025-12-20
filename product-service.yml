@@ -5,10 +5,7 @@ spring:
   application:
     name: product-service 
   datasource:
-     url: jdbc:mysql://localhost:3306/product
-         ?useSSL=false
-         &serverTimezone=UTC
-         &allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/product       
     username: root
     password: mysql
     driver-class-name: com.mysql.cj.jdbc.Driver
