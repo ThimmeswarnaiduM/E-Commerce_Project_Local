@@ -7,7 +7,7 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb://admin:admin@localhost:27017/customer?authSource=admin&authMechanism=SCRAM-SHA-1
+     uri: mongodb://localhost:27017/customer
 
 eureka:
   client:
@@ -54,3 +54,4 @@ springdoc:
   swagger-ui:
     enabled: true
     path: /swagger-ui.html
+
