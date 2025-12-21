@@ -19,6 +19,8 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    properties:
+        spring.json.add.type.headers: false   
 
 application:
   customer-url: http://localhost:8090/api/v1/customers
@@ -73,5 +75,6 @@ springdoc:
   swagger-ui:
     enabled: true
     path: /swagger-ui.html
+
 
 
