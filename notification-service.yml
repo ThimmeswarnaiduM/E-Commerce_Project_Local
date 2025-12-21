@@ -7,11 +7,11 @@ spring:
       uri: mongodb://localhost:27017/Notification
       database: Notification
 
-  mail:
+ mail:
     host: smtp.gmail.com
     port: 587
     username: thimmeswarnaidu1107@gmail.com
-    password: bndkatgqoeaargt
+    password: ${GMAIL_APP_PASSWORD}
     properties:
       mail:
         smtp:
@@ -38,6 +38,7 @@ eureka:
     hostname: localhost
     prefer-ip-address: true
     appname: notification-service
+
 
 
 
