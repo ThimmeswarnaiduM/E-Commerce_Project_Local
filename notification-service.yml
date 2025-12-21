@@ -8,19 +8,16 @@ spring:
       database: Notification
 
   mail:
-    host: localhost        # maildev running locally
-    port: 1025
-    username:
-    password:
+    host: smtp.gmail.com
+    port: 587
+    username: thimmeswarnaidu1107@gmail.com
+    password: Mahesh20@
     properties:
       mail:
         smtp:
-          auth: false
+          auth: true
           starttls:
-            enable: false
-        connectiontimeout: 5000
-        writetimeout: 5000
-        readtimeout: 5000
+            enable: true
 
   kafka:
     bootstrap-servers: localhost:9092
@@ -41,5 +38,6 @@ eureka:
     hostname: localhost
     prefer-ip-address: true
     appname: notification-service
+
 
 
