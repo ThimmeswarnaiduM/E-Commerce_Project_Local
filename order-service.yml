@@ -14,14 +14,15 @@ spring:
     database-platform: org.hibernate.dialect.MySQLDialect
     show-sql: true
 
-  kafka:
+  
+
+kafka:
     bootstrap-servers: localhost:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
-          spring.json.add.type.headers: false   
-
+        spring.json.add.type.headers: false
 application:
   customer-url: http://localhost:8090/api/v1/customers
   product-url: http://localhost:8091/api/v1/products
@@ -75,6 +76,7 @@ springdoc:
   swagger-ui:
     enabled: true
     path: /swagger-ui.html
+
 
 
 
