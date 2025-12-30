@@ -26,7 +26,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: info,health
   endpoint:
     health:
       show-details: always
@@ -37,3 +37,4 @@ info:
     name: API Gateway Server
     description: Spring Cloud Gateway for Microservices
     version: 1.0.0
+
